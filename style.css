@@ -83,17 +83,10 @@ body {
     gap: 10px;
 }
 
-.logo-icon {
+.logo-image {
     width: 32px;
     height: 32px;
-    background: var(--text-primary);
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--bg-white);
+    object-fit: contain;
 }
 
 .logo-text {
