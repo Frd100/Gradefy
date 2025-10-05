@@ -1,13 +1,13 @@
 # 🎓 Gradefy
 
-**La révolution IA de la révision étudiante**
+**La révolution de la révision étudiante**
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)](https://frd100.github.io/Gradefy)
 [![App Store](https://img.shields.io/badge/App%20Store-Coming%202026-blue)](https://frd100.github.io/Gradefy)
 
 ## 🚀 À propos
 
-Gradefy est une application iOS qui transforme automatiquement vos cours en flashcards grâce à l'intelligence artificielle.
+Gradefy est une application iOS qui transforme automatiquement vos cours en flashcards.
 
 ### Le problème
 
@@ -17,7 +17,7 @@ Gradefy est une application iOS qui transforme automatiquement vos cours en flas
 
 ### Notre solution
 
-✨ **Génération automatique** de flashcards via IA embarquée  
+✨ **Génération automatique** de flashcards  
 📱 **Interface iOS native** et intuitive  
 🧠 **Répétition espacée** personnalisée  
 ⚡ **43 000+ lignes de code** développées
@@ -41,7 +41,6 @@ Démocratiser l'IA éducative à l'échelle mondiale :
 ## 🛠️ Technologies
 
 - **iOS** : Swift, SwiftUI, Core Data
-- **IA** : SmolLM, Qwen2.5 (modèles embarqués)
 - **Backend** : Architecture locale-first
 
 ## 📱 Site web
