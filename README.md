@@ -3,7 +3,7 @@
 **La révolution IA de la révision étudiante**
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)](https://frd100.github.io/Gradefy)
-[![HEC Incubateur](https://img.shields.io/badge/HEC-Incubateur%202025-blue)](https://hecincubateur.fr)
+[![App Store](https://img.shields.io/badge/App%20Store-Coming%202025-blue)](https://frd100.github.io/Gradefy)
 
 ## 🚀 À propos
 
@@ -69,23 +69,29 @@ cd Gradefy
 open index.html
 ```
 
-## 🎯 Candidature HEC Incubateur
+## 🎯 Statut du projet
 
-Ce projet est candidat à l'incubateur HEC Paris 2025. Le site web vitrine a été conçu pour :
+Gradefy est actuellement en phase finale de développement pour un lancement sur l'App Store courant 2025. Le site web vitrine présente :
 
-- Démontrer la **maturité du projet** (43 000+ lignes de code)
-- Présenter la **validation terrain** concrète
-- Illustrer une **vision scalable** et internationale
-- Montrer la **capacité d'exécution** du fondateur
+- La **maturité du projet** (43 000+ lignes de code développées)
+- La **validation marché** concrète auprès d'étudiants
+- Une **vision scalable** et internationale
+- L'**expertise technique** du fondateur
 
 ## 👨‍💻 Fondateur
 
 **Farid**  
-Étudiant-entrepreneur PEPITE • Développeur iOS expert • Spécialisé IA éducative  
+Étudiant-entrepreneur PEPITE Île-de-France • Développeur iOS expert • Spécialisé IA éducative  
 Paris Nanterre University
 
 📧 contact@gradefy.app  
 💼 [LinkedIn](https://linkedin.com/in/gradefy)
+
+## 📞 Contact
+
+Pour toute question ou partenariat :
+- Email : contact@gradefy.app
+- Site web : https://frd100.github.io/Gradefy
 
 ## 📄 Licence
 
