@@ -3,11 +3,11 @@
 **La révolution IA de la révision étudiante**
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)](https://frd100.github.io/Gradefy)
-[![App Store](https://img.shields.io/badge/App%20Store-Coming%202025-blue)](https://frd100.github.io/Gradefy)
+[![App Store](https://img.shields.io/badge/App%20Store-Coming%202026-blue)](https://frd100.github.io/Gradefy)
 
 ## 🚀 À propos
 
-Gradefy est une application iOS innovante qui transforme automatiquement vos cours en flashcards intelligentes grâce à l'intelligence artificielle embarquée (SmolLM/Qwen2.5).
+Gradefy est une application iOS qui transforme automatiquement vos cours en flashcards grâce à l'intelligence artificielle.
 
 ### Le problème
 
@@ -71,7 +71,7 @@ open index.html
 
 ## 🎯 Statut du projet
 
-Gradefy est actuellement en phase finale de développement pour un lancement sur l'App Store courant 2025. Le site web vitrine présente :
+Gradefy est actuellement en phase finale de développement pour un lancement sur l'App Store courant 2026. Le site web vitrine présente :
 
 - La **maturité du projet** (43 000+ lignes de code développées)
 - La **validation marché** concrète auprès d'étudiants
@@ -81,17 +81,13 @@ Gradefy est actuellement en phase finale de développement pour un lancement sur
 ## 👨‍💻 Fondateur
 
 **Farid**  
-Étudiant-entrepreneur PEPITE Île-de-France • Développeur iOS expert • Spécialisé IA éducative  
-Paris Nanterre University
+Développeur iOS • Paris Nanterre University
 
-📧 contact@gradefy.app  
 💼 [LinkedIn](https://linkedin.com/in/gradefy)
 
 ## 📞 Contact
 
-Pour toute question ou partenariat :
-- Email : contact@gradefy.app
-- Site web : https://frd100.github.io/Gradefy
+Site web : https://frd100.github.io/Gradefy
 
 ## 📄 Licence
 
