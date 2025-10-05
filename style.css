@@ -280,11 +280,6 @@ a {
     margin-bottom: 60px;
 }
 
-.section-emoji {
-    font-size: 48px;
-    display: block;
-    margin-bottom: 16px;
-}
 
 .section-title {
     font-size: 42px;
@@ -398,10 +393,6 @@ a {
     box-shadow: var(--shadow-xl);
 }
 
-.feature-icon {
-    font-size: 36px;
-    margin-bottom: 16px;
-}
 
 .feature-title {
     font-size: 20px;
