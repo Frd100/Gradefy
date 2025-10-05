@@ -1,42 +1,384 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradefy - Système de notation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        .welcome {
-            text-align: center;
-            margin: 20px 0;
-            color: #666;
-        }
-    </style>
+    <meta name="description"
+        content="Gradefy - La révolution IA de la révision étudiante. Application iOS qui transforme vos cours en flashcards intelligentes.">
+    <meta name="keywords" content="flashcards, IA, révision, étudiants, iOS, intelligence artificielle">
+    <title>Gradefy - La révolution IA de la révision étudiante</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <h1>🎓 Gradefy</h1>
-        <div class="welcome">
-            <p>Bienvenue sur Gradefy, votre système de notation intelligent !</p>
-            <p>Site en cours de développement...</p>
+    <!-- HEADER/HERO -->
+    <header id="hero">
+        <nav class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">G</div>
+                <span class="logo-text">Gradefy</span>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <div class="hero-badge">🚀 Candidat HEC Incubateur 2025</div>
+            <h1 class="hero-title">
+                La révolution IA de la<br>
+                <span class="gradient-text">révision étudiante</span>
+            </h1>
+            <p class="hero-subtitle">
+                La première application iOS qui transforme vos cours<br>
+                en flashcards intelligentes grâce à l'IA embarquée
+            </p>
+            <div class="hero-cta">
+                <a href="#defi" class="btn-primary">Découvrir le projet</a>
+                <a href="#validation" class="btn-secondary">Voir la validation</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">43 000+</div>
+                    <div class="stat-label">lignes de code</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">iOS natif</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">validations terrain</div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- LE DÉFI -->
+    <section id="defi" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-emoji">📚</span>
+                <h2 class="section-title">Le défi de la révision moderne</h2>
+            </div>
+
+            <div class="defi-content">
+                <p class="defi-text">
+                    <strong>75% des étudiants utilisent encore des méthodes manuelles chronophages.</strong>
+                    Les applications existantes comme Anki demandent trop de temps de préparation
+                    et ne répondent pas aux besoins d'automatisation des étudiants modernes.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-card-number">75%</div>
+                        <div class="stat-card-label">Méthodes manuelles</div>
+                        <p class="stat-card-desc">Des étudiants créent encore leurs flashcards à la main</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-number">50%</div>
+                        <div class="stat-card-label">Insatisfaits</div>
+                        <p class="stat-card-desc">Des utilisateurs trouvent les outils actuels trop complexes</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-number">3-5h</div>
+                        <div class="stat-card-label">Temps perdu</div>
+                        <p class="stat-card-desc">Par semaine à créer des flashcards manuellement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LA SOLUTION -->
+    <section id="solution" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-emoji">🤖</span>
+                <h2 class="section-title">Une révision intelligente et automatisée</h2>
+                <p class="section-subtitle">
+                    Gradefy utilise l'IA embarquée (SmolLM/Qwen2.5) pour générer automatiquement
+                    des flashcards de qualité à partir de vos cours
+                </p>
+            </div>
+
+            <div class="solution-grid">
+                <div class="solution-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3 class="feature-title">Génération automatique</h3>
+                        <p class="feature-desc">
+                            L'IA analyse vos cours et génère instantanément des flashcards
+                            pertinentes et structurées
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3 class="feature-title">Interface iOS native</h3>
+                        <p class="feature-desc">
+                            Expérience utilisateur fluide et intuitive, conçue spécifiquement
+                            pour l'écosystème Apple
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3 class="feature-title">Répétition espacée</h3>
+                        <p class="feature-desc">
+                            Algorithme personnalisé qui optimise votre mémorisation à long terme
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">43 000+ lignes de code</h3>
+                        <p class="feature-desc">
+                            Application mature et robuste, développée avec expertise et rigueur
+                        </p>
+                    </div>
+                </div>
+
+                <div class="solution-mockup">
+                    <div class="mockup-container">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="images/placeholder.svg" alt="Interface Gradefy" class="mockup-img">
+                            </div>
+                        </div>
+                        <div class="phone-mockup phone-mockup-secondary">
+                            <div class="phone-screen">
+                                <img src="images/placeholder.svg" alt="Génération IA" class="mockup-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALIDATION TERRAIN -->
+    <section id="validation" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-emoji">📊</span>
+                <h2 class="section-title">Validation marché confirmée</h2>
+                <p class="section-subtitle">
+                    8 entretiens approfondis avec des étudiants cibles révèlent un besoin réel et urgent
+                </p>
+            </div>
+
+            <div class="validation-stats">
+                <div class="validation-card">
+                    <div class="validation-number">75%</div>
+                    <div class="validation-label">Adoption immédiate</div>
+                    <p class="validation-desc">Des étudiants interrogés utiliseraient Gradefy dès sa sortie</p>
+                </div>
+                <div class="validation-card">
+                    <div class="validation-number">62%</div>
+                    <div class="validation-label">Veulent la génération IA</div>
+                    <p class="validation-desc">Demandent spécifiquement l'automatisation par intelligence artificielle
+                    </p>
+                </div>
+                <div class="validation-card">
+                    <div class="validation-number">100%</div>
+                    <div class="validation-label">Utilisent iPhone</div>
+                    <p class="validation-desc">Tous les répondants sont dans l'écosystème Apple</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">
+                    Les applications existantes comme Anki prennent beaucoup trop de temps
+                    à configurer. J'aimerais quelque chose qui génère automatiquement mes
+                    flashcards pendant que je révise.
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar"></div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Étudiant en ingénierie</div>
+                        <div class="testimonial-role">Validation terrain • Mars 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION -->
+    <section id="vision" class="section section-gradient">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-emoji">🌍</span>
+                <h2 class="section-title section-title-white">Vision internationale</h2>
+                <p class="section-subtitle section-subtitle-white">
+                    Démocratiser l'intelligence artificielle éducative à l'échelle mondiale
+                </p>
+            </div>
+
+            <div class="vision-content">
+                <div class="vision-grid">
+                    <div class="vision-card">
+                        <h3 class="vision-card-title">Marché cible</h3>
+                        <div class="vision-card-number">280M+</div>
+                        <p class="vision-card-desc">Étudiants dans le monde utilisent des flashcards</p>
+                    </div>
+                    <div class="vision-card">
+                        <h3 class="vision-card-title">Modèle économique</h3>
+                        <div class="vision-card-label">Freemium</div>
+                        <p class="vision-card-desc">Version gratuite + Premium avec IA avancée</p>
+                    </div>
+                    <div class="vision-card">
+                        <h3 class="vision-card-title">Expansion</h3>
+                        <div class="vision-card-label">Multi-plateformes</div>
+                        <p class="vision-card-desc">iOS → iPad → Mac → Android</p>
+                    </div>
+                </div>
+
+                <div class="vision-roadmap">
+                    <h3 class="roadmap-title">Feuille de route</h3>
+                    <div class="roadmap-timeline">
+                        <div class="roadmap-item">
+                            <div class="roadmap-dot"></div>
+                            <div class="roadmap-content">
+                                <div class="roadmap-phase">Phase 1 • Q2 2025</div>
+                                <div class="roadmap-desc">Lancement MVP iOS • Beta testeurs</div>
+                            </div>
+                        </div>
+                        <div class="roadmap-item">
+                            <div class="roadmap-dot"></div>
+                            <div class="roadmap-content">
+                                <div class="roadmap-phase">Phase 2 • Q3 2025</div>
+                                <div class="roadmap-desc">Version Premium • Monétisation</div>
+                            </div>
+                        </div>
+                        <div class="roadmap-item">
+                            <div class="roadmap-dot"></div>
+                            <div class="roadmap-content">
+                                <div class="roadmap-phase">Phase 3 • Q4 2025</div>
+                                <div class="roadmap-desc">Expansion internationale • iPad</div>
+                            </div>
+                        </div>
+                        <div class="roadmap-item">
+                            <div class="roadmap-dot"></div>
+                            <div class="roadmap-content">
+                                <div class="roadmap-phase">Phase 4 • 2026</div>
+                                <div class="roadmap-desc">Multi-plateformes • Partenariats universités</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FONDATEUR -->
+    <section id="fondateur" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-emoji">👨‍💻</span>
+                <h2 class="section-title">À propos du fondateur</h2>
+            </div>
+
+            <div class="founder-content">
+                <div class="founder-card">
+                    <div class="founder-avatar">
+                        <div class="avatar-placeholder">F</div>
+                    </div>
+                    <div class="founder-info">
+                        <h3 class="founder-name">Farid</h3>
+                        <p class="founder-title">Fondateur & CEO • Développeur iOS</p>
+
+                        <div class="founder-badges">
+                            <span class="badge">🎓 Étudiant-entrepreneur PEPITE</span>
+                            <span class="badge">💻 Expert développement iOS</span>
+                            <span class="badge">🤖 Spécialisé IA éducative</span>
+                            <span class="badge">🏛️ Paris Nanterre University</span>
+                        </div>
+
+                        <p class="founder-bio">
+                            Passionné par l'intersection entre l'intelligence artificielle et l'éducation,
+                            je développe Gradefy pour résoudre un problème que j'ai moi-même rencontré
+                            pendant mes études. Avec plus de 43 000 lignes de code déjà écrites,
+                            je suis déterminé à transformer la façon dont les étudiants révisent.
+                        </p>
+
+                        <div class="founder-contact">
+                            <a href="mailto:contact@gradefy.app" class="contact-btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M3 4L10 11L17 4M3 4H17M3 4V16H17V4" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                contact@gradefy.app
+                            </a>
+                            <a href="https://linkedin.com/in/gradefy" class="contact-btn" target="_blank"
+                                rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path
+                                        d="M16 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H16C17.1 18 18 17.1 18 16V4C18 2.9 17.1 2 16 2ZM7 15H5V8H7V15ZM6 7C5.4 7 5 6.6 5 6C5 5.4 5.4 5 6 5C6.6 5 7 5.4 7 6C7 6.6 6.6 7 6 7ZM15 15H13V11.5C13 10.7 12.3 10 11.5 10C10.7 10 10 10.7 10 11.5V15H8V8H10V9C10.5 8.4 11.2 8 12 8C13.7 8 15 9.3 15 11V15Z"
+                                        fill="currentColor" />
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">G</div>
+                        <span class="logo-text">Gradefy</span>
+                    </div>
+                    <p class="footer-tagline">
+                        La révolution IA de la révision étudiante
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Projet</h4>
+                        <a href="#defi" class="footer-link">Le défi</a>
+                        <a href="#solution" class="footer-link">La solution</a>
+                        <a href="#validation" class="footer-link">Validation</a>
+                        <a href="#vision" class="footer-link">Vision</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Contact</h4>
+                        <a href="mailto:contact@gradefy.app" class="footer-link">Email</a>
+                        <a href="https://linkedin.com/in/gradefy" class="footer-link">LinkedIn</a>
+                        <a href="https://github.com/frd100/Gradefy" class="footer-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 Gradefy. Candidat HEC Incubateur Paris.
+                </p>
+                <p class="footer-made">
+                    Développé avec passion à Paris 🇫🇷
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
