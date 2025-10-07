@@ -163,7 +163,7 @@ body {
 
 .story {
     padding: var(--spacing-section) 0;
-    background: var(--bg-gray);
+    background: var(--bg-white);
 }
 
 .story-container {
@@ -175,7 +175,7 @@ body {
 .story-content {
     max-width: 700px;
     margin: 0 auto;
-    text-align: right;
+    text-align: left;
 }
 
 .story-content p {
