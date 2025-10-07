@@ -191,12 +191,19 @@
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     const paragraph = entry.target;
+                    const image = paragraph.querySelector('.story-emoji');
                     
                     // Blanc direct quand visible au milieu
                     if (entry.isIntersecting) {
                         paragraph.style.color = '#ffffff'; // Blanc direct
+                        if (image) {
+                            image.style.filter = 'none'; // Couleurs originales
+                        }
                     } else {
                         paragraph.style.color = '#818085'; // Gris par défaut
+                        if (image) {
+                            image.style.filter = 'grayscale(100%)'; // Gris
+                        }
                     }
                 });
             }, {
