@@ -193,13 +193,13 @@
                 const starElement = document.getElementById('star-1');
                 let animation = null;
                 let hasAnimated = false;
-                
+
                 // Intersection Observer pour détecter quand l'étoile est visible
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting && !hasAnimated) {
                             hasAnimated = true;
-                            
+
                             // Lancer l'animation une seule fois
                             animation = lottie.loadAnimation({
                                 container: starElement,
@@ -208,19 +208,20 @@
                                 autoplay: true,
                                 path: 'wired-flat-237-star-rating-hover-pinch.json'
                             });
-                            
+
                             // Quand l'animation se termine, on peut la relancer
-                            animation.addEventListener('complete', function() {
+                            animation.addEventListener('complete', function () {
                                 hasAnimated = false;
-                                animation.destroy();
-                                animation = null;
+                                // Ne pas détruire l'animation pour garder l'étoile visible
+                                // animation.destroy();
+                                // animation = null;
                             });
                         }
                     });
                 }, {
                     threshold: 0.1 // Se déclenche quand 10% de l'élément est visible
                 });
-                
+
                 // Observer l'étoile
                 observer.observe(starElement);
             }
