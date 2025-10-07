@@ -199,23 +199,25 @@
                     entries.forEach(entry => {
                         if (entry.isIntersecting && !hasAnimated) {
                             hasAnimated = true;
-
-                            // Lancer l'animation une seule fois
-                            animation = lottie.loadAnimation({
-                                container: starElement,
-                                renderer: 'svg',
-                                loop: false, // Pas de boucle
-                                autoplay: true,
-                                path: 'wired-flat-237-star-rating-hover-pinch.json'
-                            });
-
-                            // Quand l'animation se termine, on peut la relancer
-                            animation.addEventListener('complete', function () {
-                                hasAnimated = false;
-                                // Ne pas détruire l'animation pour garder l'étoile visible
-                                // animation.destroy();
-                                // animation = null;
-                            });
+                            
+                            // Si animation existe déjà, la relancer
+                            if (animation) {
+                                animation.goToAndPlay(0, true); // Relancer depuis le début
+                            } else {
+                                // Créer l'animation pour la première fois
+                                animation = lottie.loadAnimation({
+                                    container: starElement,
+                                    renderer: 'svg',
+                                    loop: false, // Pas de boucle
+                                    autoplay: true,
+                                    path: 'wired-flat-237-star-rating-hover-pinch.json'
+                                });
+                                
+                                // Quand l'animation se termine, on peut la relancer
+                                animation.addEventListener('complete', function () {
+                                    hasAnimated = false;
+                                });
+                            }
                         }
                     });
                 }, {
