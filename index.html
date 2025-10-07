@@ -193,12 +193,13 @@
                     const paragraph = entry.target;
                     const opacity = entry.intersectionRatio;
 
-                    // Calculer la couleur basée sur la visibilité
-                    const grayValue = Math.max(100, 255 - (opacity * 155)); // 100-255
+                    // Calculer la couleur : gris vers blanc (inversé)
+                    const grayValue = Math.min(255, 129 + (opacity * 126)); // 129-255 (gris vers blanc)
                     paragraph.style.color = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
                 });
             }, {
-                threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+                threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+                rootMargin: '0% 0% -50% 0%' // Se déclenche quand l'élément arrive au milieu
             });
 
             // Observer chaque paragraphe
