@@ -211,6 +211,14 @@ body {
     margin: 0 4px;
 }
 
+.lottie-star {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 4px;
+    vertical-align: middle;
+}
+
 .animated-emoji.sparkle {
     animation: sparkle 2s ease-in-out infinite;
 }
