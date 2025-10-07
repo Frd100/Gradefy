@@ -53,7 +53,8 @@
         <div class="story-container">
             <div class="story-content">
                 <p>L'apprentissage demande du temps, de la méthode et une réelle clarté d'esprit <span
-                        class="lottie-star" id="star-1"></span>. Un processus exigeant, souvent dispersé entre supports, plateformes et outils multiples.</p>
+                        class="lottie-star" id="star-1"></span>. Un processus exigeant, souvent dispersé entre supports,
+                    plateformes et outils multiples.</p>
 
                 <p>Aujourd'hui, la diversité des applications rend cette organisation plus complexe qu'elle ne devrait
                     l'être.
@@ -186,16 +187,32 @@
 
     <!-- Lottie Animation Script -->
     <script>
-        // Charger l'animation Lottie pour l'étoile
+        // Charger l'animation Lottie pour l'étoile quand elle est visible
         document.addEventListener('DOMContentLoaded', function () {
             if (typeof lottie !== 'undefined') {
-                lottie.loadAnimation({
-                    container: document.getElementById('star-1'),
-                    renderer: 'svg',
-                    loop: true,
-                    autoplay: true,
-                    path: 'wired-flat-237-star-rating-hover-pinch.json'
+                const starElement = document.getElementById('star-1');
+                let animation = null;
+                
+                // Intersection Observer pour détecter quand l'étoile est visible
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && !animation) {
+                            // Lancer l'animation seulement quand visible
+                            animation = lottie.loadAnimation({
+                                container: starElement,
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                path: 'wired-flat-237-star-rating-hover-pinch.json'
+                            });
+                        }
+                    });
+                }, {
+                    threshold: 0.1 // Se déclenche quand 10% de l'élément est visible
                 });
+                
+                // Observer l'étoile
+                observer.observe(starElement);
             }
         });
     </script>
