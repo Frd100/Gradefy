@@ -220,7 +220,8 @@ body {
     height: 28px;
     margin: 0 4px;
     vertical-align: middle;
-    filter: grayscale(100%); /* Gris par défaut */
+    filter: grayscale(100%);
+    /* Gris par défaut */
     transition: filter 0.3s ease;
 }
 
