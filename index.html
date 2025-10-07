@@ -199,7 +199,7 @@
                     entries.forEach(entry => {
                         if (entry.isIntersecting && !hasAnimated) {
                             hasAnimated = true;
-                            
+
                             // Si animation existe déjà, la relancer
                             if (animation) {
                                 animation.goToAndPlay(0, true); // Relancer depuis le début
@@ -212,7 +212,7 @@
                                     autoplay: true,
                                     path: 'wired-flat-237-star-rating-hover-pinch.json'
                                 });
-                                
+
                                 // Quand l'animation se termine, on peut la relancer
                                 animation.addEventListener('complete', function () {
                                     hasAnimated = false;
