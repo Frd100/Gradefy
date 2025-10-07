@@ -179,20 +179,20 @@
         </div>
         <div class="footer-bottom">
             <p class="footer-copyright">© 2025 Gradefy. Tous droits réservés.</p>
-    </div>
+        </div>
     </footer>
 
     <!-- Scroll Effect Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const paragraphs = document.querySelectorAll('.story-content p');
-            
+
             // Intersection Observer pour chaque paragraphe
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     const paragraph = entry.target;
                     const opacity = entry.intersectionRatio;
-                    
+
                     // Calculer la couleur basée sur la visibilité
                     const grayValue = Math.max(100, 255 - (opacity * 155)); // 100-255
                     paragraph.style.color = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
@@ -200,7 +200,7 @@
             }, {
                 threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
             });
-            
+
             // Observer chaque paragraphe
             paragraphs.forEach(paragraph => {
                 observer.observe(paragraph);
