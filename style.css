@@ -157,7 +157,7 @@ body {
 
 .hero-video {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 0;
     overflow: hidden;
 }
 
@@ -173,7 +173,7 @@ body {
    ========================================== */
 
 .story {
-    padding: var(--spacing-section) 0;
+    padding: 0 0 var(--spacing-section) 0;
     background: var(--bg-white);
 }
 
