@@ -191,14 +191,16 @@
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     const paragraph = entry.target;
-                    const opacity = entry.intersectionRatio;
-
-                    // Calculer la couleur : gris vers blanc (inversé)
-                    const grayValue = Math.min(255, 129 + (opacity * 126)); // 129-255 (gris vers blanc)
-                    paragraph.style.color = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
+                    
+                    // Blanc direct quand visible au milieu
+                    if (entry.isIntersecting) {
+                        paragraph.style.color = '#ffffff'; // Blanc direct
+                    } else {
+                        paragraph.style.color = '#818085'; // Gris par défaut
+                    }
                 });
             }, {
-                threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+                threshold: 0.5, // Se déclenche à 50% de visibilité
                 rootMargin: '0% 0% -50% 0%' // Se déclenche quand l'élément arrive au milieu
             });
 
