@@ -192,9 +192,10 @@ body {
 .story-content p {
     font-size: 20px;
     line-height: 1.8;
-    color: var(--text-primary);
+    color: #999999; /* Gris par défaut */
     margin-bottom: 32px;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .story-content p:last-child {
