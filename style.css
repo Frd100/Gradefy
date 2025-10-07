@@ -155,6 +155,24 @@ body {
     margin-bottom: 32px;
 }
 
+.hero-cta {
+    display: inline-block;
+    background: var(--accent-blue);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+.hero-cta:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
 .hero-video {
     width: 100%;
     margin-top: 0;
@@ -166,6 +184,328 @@ body {
     height: auto;
     display: block;
     max-width: 100%;
+}
+
+/* ==========================================
+   NEW SECTIONS FOR HEC
+   ========================================== */
+
+/* Problem/Solution Section */
+.problem-section {
+    padding: var(--spacing-section) 0;
+    background: var(--bg-white);
+}
+
+.problem-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.problem-stats {
+    margin-bottom: 40px;
+}
+
+.stat-highlight {
+    display: inline-block;
+    background: var(--accent-blue);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+
+.stat-highlight .stat-number {
+    font-size: 48px;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.stat-highlight .stat-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.problem-description {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Technical Traction Section */
+.tech-section {
+    padding: var(--spacing-section) 0;
+    background: var(--bg-gray);
+}
+
+.tech-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.tech-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.metric-card {
+    background: var(--bg-white);
+    padding: 32px 24px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border-light);
+}
+
+.metric-number {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--accent-blue);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.metric-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.metric-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Validation Section */
+.validation-section {
+    padding: var(--spacing-section) 0;
+    background: var(--bg-white);
+}
+
+.validation-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.validation-content {
+    margin-top: 40px;
+}
+
+.validation-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.validation-stat {
+    text-align: center;
+    padding: 24px;
+    background: var(--bg-gray);
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+}
+
+.validation-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--accent-blue);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.validation-text {
+    font-size: 16px;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.validation-note {
+    background: var(--bg-gray);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.validation-note p {
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+/* Business Model Section */
+.business-section {
+    padding: var(--spacing-section) 0;
+    background: var(--bg-gray);
+}
+
+.business-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.business-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-top: 40px;
+    align-items: start;
+}
+
+.business-model h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+}
+
+.model-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.model-tier {
+    background: var(--bg-white);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+}
+
+.model-tier h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.model-tier ul {
+    list-style: none;
+    padding: 0;
+}
+
+.model-tier li {
+    padding: 8px 0;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.model-tier li:last-child {
+    border-bottom: none;
+}
+
+.market-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+}
+
+.market-stats {
+    text-align: center;
+    background: var(--bg-white);
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+}
+
+.market-size {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--accent-blue);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.market-growth {
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+/* Roadmap Section */
+.roadmap-section {
+    padding: var(--spacing-section) 0;
+    background: var(--bg-white);
+}
+
+.roadmap-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.roadmap-timeline {
+    margin-top: 40px;
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+}
+
+.timeline-phase {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 400px;
+}
+
+.phase-number {
+    background: var(--accent-blue);
+    color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.phase-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.phase-duration {
+    font-size: 14px;
+    color: var(--accent-blue);
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.phase-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.phase-content li {
+    padding: 8px 0;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 20px;
+}
+
+.phase-content li:before {
+    content: "•";
+    color: var(--accent-blue);
+    position: absolute;
+    left: 0;
 }
 
 /* ==========================================
@@ -584,5 +924,30 @@ body {
     .feature-card,
     .testimonial-card {
         padding: 24px;
+    }
+
+    /* Responsive for new sections */
+    .business-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .model-features {
+        grid-template-columns: 1fr;
+    }
+
+    .roadmap-timeline {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .tech-metrics {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+    }
+
+    .validation-stats {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 }
