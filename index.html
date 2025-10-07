@@ -12,8 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <!-- Lottie Web Player -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
 </head>
 
 <body>
@@ -52,9 +50,7 @@
     <section class="story">
         <div class="story-container">
             <div class="story-content">
-                <p>L'apprentissage demande du temps, de la méthode et une réelle clarté d'esprit <span
-                        class="lottie-star" id="star-1"></span>. Un processus exigeant, souvent dispersé entre supports,
-                    plateformes et outils multiples.</p>
+                <p>L'apprentissage demande du temps, de la méthode et une réelle clarté d'esprit. Un processus exigeant, souvent dispersé entre supports, plateformes et outils multiples.</p>
 
                 <p>Aujourd'hui, la diversité des applications rend cette organisation plus complexe qu'elle ne devrait
                     l'être.
@@ -185,50 +181,6 @@
         </div>
     </footer>
 
-    <!-- Lottie Animation Script -->
-    <script>
-        // Charger l'animation Lottie pour l'étoile quand elle est visible
-        document.addEventListener('DOMContentLoaded', function () {
-            if (typeof lottie !== 'undefined') {
-                const starElement = document.getElementById('star-1');
-                let animation = null;
-                let hasAnimated = false;
-
-                // Intersection Observer pour détecter quand l'étoile est visible
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting && !hasAnimated) {
-                            hasAnimated = true;
-
-                            // Si animation existe déjà, la relancer
-                            if (animation) {
-                                animation.goToAndPlay(0, true); // Relancer depuis le début
-                            } else {
-                                // Créer l'animation pour la première fois
-                                animation = lottie.loadAnimation({
-                                    container: starElement,
-                                    renderer: 'svg',
-                                    loop: false, // Pas de boucle
-                                    autoplay: true,
-                                    path: 'wired-flat-237-star-rating-hover-pinch.json'
-                                });
-
-                                // Quand l'animation se termine, on peut la relancer
-                                animation.addEventListener('complete', function () {
-                                    hasAnimated = false;
-                                });
-                            }
-                        }
-                    });
-                }, {
-                    threshold: 0.1 // Se déclenche quand 10% de l'élément est visible
-                });
-
-                // Observer l'étoile
-                observer.observe(starElement);
-            }
-        });
-    </script>
 </body>
 
 </html>
