@@ -52,6 +52,7 @@ body {
     background-color: var(--bg-white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 /* ==========================================
@@ -147,15 +148,16 @@ body {
 }
 
 .hero-video {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
     margin-top: 60px;
+    overflow: hidden;
 }
 
 .hero-video video {
     width: 100%;
     height: auto;
     display: block;
+    max-width: 100%;
 }
 
 /* ==========================================
