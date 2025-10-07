@@ -3,23 +3,23 @@
    ========================================== */
 
 :root {
-    /* Colors - Flighty inspired */
-    --bg-white: #ffffff;
-    --bg-gray: #fafafa;
-    --text-primary: #000000;
-    --text-secondary: #666666;
+    /* Colors - Dark theme */
+    --bg-white: #000000;
+    --bg-gray: #000000;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
     --text-tertiary: #999999;
     --accent-blue: #007AFF;
-    --border-light: rgba(0, 0, 0, 0.04);
+    --border-light: rgba(255, 255, 255, 0.1);
 
-    /* Flighty Shadow System (multicouches) */
+    /* Dark Shadow System (multicouches) */
     --shadow-card:
-        0px 0px 0px 1px rgba(0, 0, 0, 0.04),
-        0px 1px 1px 0.5px rgba(0, 0, 0, 0.02),
-        0px 3px 3px 1.5px rgba(0, 0, 0, 0.02),
-        0px 6px 6px -3px rgba(0, 0, 0, 0.02),
-        0px 12px 12px -6px rgba(0, 0, 0, 0.02),
-        0px 24px 24px -12px rgba(0, 0, 0, 0.02);
+        0px 0px 0px 1px rgba(255, 255, 255, 0.1),
+        0px 1px 1px 0.5px rgba(255, 255, 255, 0.05),
+        0px 3px 3px 1.5px rgba(255, 255, 255, 0.05),
+        0px 6px 6px -3px rgba(255, 255, 255, 0.05),
+        0px 12px 12px -6px rgba(255, 255, 255, 0.05),
+        0px 24px 24px -12px rgba(255, 255, 255, 0.05);
 
     /* Border Radius */
     --radius-card: 12px;
