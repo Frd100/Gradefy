@@ -7,16 +7,18 @@ function CTASection() {
         <div className="cta-icon-wrapper">
           <img src="/logo.png" alt="Gradefy" className="cta-logo" />
         </div>
-        <h2 className="cta-title">Télécharger Gradefy</h2>
+        <h2 className="cta-title">Découvrir Gradefy</h2>
         <a
-          href="https://apps.apple.com/app/gradefy"
+          href="#features"
           className="btn btn-secondary cta-button"
-          target="_blank"
-          rel="noopener"
+          onClick={(e) => {
+            e.preventDefault()
+            document.querySelector('#features')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          }}
         >
-          Télécharger sur l'App Store
+          Explorer les fonctionnalités
         </a>
-        <p className="cta-note">* Disponible sur iOS 17.0 et versions ultérieures</p>
+        <p className="cta-note">* Concept d'application iOS</p>
       </div>
     </section>
   )

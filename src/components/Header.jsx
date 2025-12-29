@@ -1,66 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 function Header() {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10)
-    }
-
-    handleScroll()
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  const handleSmoothScroll = (e, targetId) => {
-    e.preventDefault()
-    const target = document.querySelector(targetId)
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
-    }
-  }
-
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
-      <div className="header-container">
-        <div className="flex items-center">
-          <a href="#" className="logo-link" onClick={(e) => {
-            e.preventDefault()
-            window.scrollTo({ top: 0, behavior: 'smooth' })
-          }}>
-            <img src="/logo.png" alt="Gradefy" className="header-logo" />
-            <span className="logo-text">Gradefy</span>
-          </a>
-        </div>
-        <nav className="nav-desktop">
-          <ul className="nav-list">
-            <li>
-              <a
-                href="#features"
-                className="nav-link"
-                onClick={(e) => handleSmoothScroll(e, '#features')}
-              >
-                Fonctionnalités
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div className="header-actions">
-          <a
-            href="https://apps.apple.com/app/gradefy"
-            className="btn btn-primary"
-            target="_blank"
-            rel="noopener"
-          >
-            Télécharger sur l'App Store
+    <>
+      {/* Secondary Header */}
+      <div className="apple-secondary-header">
+        <div className="apple-secondary-header-container">
+          <h2 className="apple-secondary-title">Gradefy</h2>
+          <a href="#features" className="apple-cta-button">
+            Découvrir Gradefy
           </a>
         </div>
       </div>
-    </header>
+    </>
   )
 }
 

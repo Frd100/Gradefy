@@ -1,36 +1,45 @@
 import React from 'react'
 
-function Hero() {
+function Hero({ isAnimating, onToggleAnimation }) {
   return (
-    <section className="hero-section">
-      <div className="hero-container">
-        <div className="hero-content">
-          <div className="hero-icon-wrapper">
-            <img src="/logo.png" alt="Gradefy" className="hero-logo" />
-          </div>
-          <h1 className="hero-title">Gradefy</h1>
-          <a
-            href="https://apps.apple.com/app/gradefy"
-            className="btn btn-secondary hero-cta"
-            target="_blank"
-            rel="noopener"
-          >
-            Télécharger sur l'App Store
-          </a>
+    <section className="apple-hero-section">
+      <div className="apple-hero-container">
+        {/* Logo + Brand */}
+        <div className="apple-hero-brand">
+          <span className="apple-hero-brand-text">Gradefy</span>
         </div>
-        <div className="hero-video-wrapper">
-          <div className="video-placeholder">
-            <div className="play-icon">▶</div>
-          </div>
-        </div>
-        <div className="hero-description">
-          <p className="hero-text">
-            L'application iOS qui révolutionne votre façon d'apprendre. Gérez vos notes, créez
-            des flashcards intelligentes avec l'IA, et optimisez vos révisions avec le système de répétition
-            espacée.
-          </p>
-        </div>
+
+        {/* Main Title */}
+        <h1 className="apple-hero-title">
+          Révolutionnez
+          <br />
+          votre
+          <br />
+          apprentissage.
+        </h1>
+
+        {/* Description */}
+        <p className="apple-hero-description">
+          Gérez vos notes, créez des flashcards avec l'IA, et optimisez vos révisions avec le système de répétition espacée.
+        </p>
       </div>
+
+      {/* Play/Pause Button */}
+      <button 
+        className="apple-play-button" 
+        onClick={onToggleAnimation}
+        aria-label={isAnimating ? "Pause l'animation" : "Lire l'animation"}
+      >
+        {isAnimating ? (
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        ) : (
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        )}
+      </button>
     </section>
   )
 }

@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ShaderGradientCanvas, ShaderGradient } from '@shadergradient/react'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import FeatureSection from './components/FeatureSection'
-import PrivacySection from './components/PrivacySection'
-import MoreFeaturesSection from './components/MoreFeaturesSection'
-import CTASection from './components/CTASection'
+import WhiteSection from './components/WhiteSection'
+import LiquidGlassSection from './components/LiquidGlassSection'
 import Footer from './components/Footer'
 import './App.css'
 
 function App() {
+  const [isAnimating, setIsAnimating] = useState(true)
+
+  const toggleAnimation = () => {
+    setIsAnimating(!isAnimating)
+  }
+
   return (
     <div className="app">
       {/* ShaderGradient Background */}
@@ -20,36 +24,45 @@ function App() {
           fov={45}
         >
           <ShaderGradient
-            animate="on"
-            brightness={1.2}
-            cAzimuthAngle={188}
-            cDistance={2.9}
-            cPolarAngle={80}
+            animate={isAnimating ? "on" : "off"}
+            axesHelper="off"
+            bgColor1="#000000"
+            bgColor2="#000000"
+            brightness={1.1}
+            cAzimuthAngle={170}
+            cDistance={4.5}
+            cPolarAngle={70}
             cameraZoom={1}
-            color1="#1472ff"
-            color2="#61aaf8"
-            color3="#8fc1ff"
+            color1="#00c3ff"
+            color2="#59afff"
+            color3="#78dfff"
+            destination="onCanvas"
+            embedMode="off"
             envPreset="city"
+            format="gif"
+            frameRate={10}
+            gizmoHelper="hide"
             grain="off"
             lightType="3d"
+            pixelDensity={1}
             positionX={0}
-            positionY={1.8}
-            positionZ={0}
+            positionY={0.9}
+            positionZ={-0.3}
             range="disabled"
             rangeEnd={40}
             rangeStart={0}
             reflection={0.1}
-            rotationX={0}
+            rotationX={45}
             rotationY={0}
-            rotationZ={-90}
+            rotationZ={0}
             shader="defaults"
             type="waterPlane"
             uAmplitude={0}
-            uDensity={1}
-            uFrequency={5.5}
-            uSpeed={0.6}
-            uStrength={3}
-            uTime={0.2}
+            uDensity={1.2}
+            uFrequency={0}
+            uSpeed={0.9}
+            uStrength={3.4}
+            uTime={0}
             wireframe={false}
           />
         </ShaderGradientCanvas>
@@ -58,38 +71,9 @@ function App() {
       {/* Content */}
       <div className="app-content">
         <Header />
-        <Hero />
-        <FeatureSection
-          title="Gérez vos notes et évaluations"
-          icon="📊"
-          description="Suivez vos notes par matière avec calcul automatique des moyennes. Support de 6 systèmes de notation internationaux (France, USA, Allemagne, UK, Espagne, Canada) avec coefficients et graphiques de progression."
-          imageClass="notes-placeholder"
-          reverse={false}
-        />
-        <FeatureSection
-          title="Répétition espacée optimisée"
-          icon="🧠"
-          description="Algorithme SM-2 scientifique pour optimiser vos révisions. Le système calcule automatiquement les meilleurs moments pour réviser chaque carte, maximisant votre rétention à long terme."
-          imageClass="srs-placeholder"
-          reverse={true}
-        />
-        <FeatureSection
-          title="Génération IA de flashcards"
-          icon="✨"
-          description="Générez automatiquement des flashcards à partir d'un simple prompt. Modèle MLX local (SmolLM3) pour une génération rapide et privée, sans connexion internet requise."
-          imageClass="ai-placeholder"
-          reverse={false}
-        />
-        <FeatureSection
-          title="Widgets iOS intégrés"
-          icon="📱"
-          description="Accédez rapidement à vos statistiques et prochaines révisions directement depuis l'écran d'accueil. Widgets personnalisables avec Live Activities pour suivre vos sessions en temps réel."
-          imageClass="widgets-placeholder"
-          reverse={true}
-        />
-        <PrivacySection />
-        <MoreFeaturesSection />
-        <CTASection />
+        <Hero isAnimating={isAnimating} onToggleAnimation={toggleAnimation} />
+        <WhiteSection />
+        <LiquidGlassSection />
         <Footer />
       </div>
     </div>

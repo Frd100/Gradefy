@@ -44,12 +44,11 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://apps.apple.com/app/gradefy"
+                    href="#features"
                     className="footer-link"
-                    target="_blank"
-                    rel="noopener"
+                    onClick={(e) => handleSmoothScroll(e, '#features')}
                   >
-                    Télécharger
+                    Fonctionnalités
                   </a>
                 </li>
               </ul>
